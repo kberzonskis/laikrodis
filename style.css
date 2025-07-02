@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #333;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+ 
+.clock-digital {
+    text-align: center;
+}
+.date {
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+.time {
+    font-family: monospace;
+    font-size: 8rem;
+}
+.clock-analog {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 100px;
+    position: relative;
+}
+.clock-analog > * {
+    transform-origin: bottom;
+    
+}
+.hours {
+    background-color: #000;
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    top: calc(50% - 70px);
+    left: calc(50% - 5px);
+}    
+.minutes {
+    background-color: #000;;
+    width: 6px;
+    height: 80px;
+    position: absolute;
+    top: calc(50% - 80px);
+    left: calc(50% - 3px);
+}
+.seconds {
+    background-color: orangered;
+    width: 4px;
+    height: 90px;
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 2px);
+}
+ 
+
+
+/* pomodoro */ 
+
+.pomodoro{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider{
+background-color: white;
+padding: 3px;
+border-radius: 11px;
+width: 51px;
+transition: all 200ms;}
+
+.dot { 
+background-color: tomato;
+width: 15px;
+height: 15px;
+border-radius: 8px ;
+transition: all 200ms;}
+
+
+.label{ 
+    font-family: sans-serif; }
+
+.pomo { 
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transform: skewX(-30deg)  ;
+}
+
+/* laikinai */ 
+
+.active {
+    background-color: tomato;
+}
+
+.active .dot {
+background-color: white;
+transform: translateX(30px);}
+
+.work {
+    color: tomato
+}
+
+
+.chill {
+    color: seagreen;
+}
