@@ -32,6 +32,7 @@ body {
     background-color: #fff;
     border-radius: 100px;
     position: relative;
+    overflow: hidden;
 }
 .clock-analog > * {
     transform-origin: bottom;
@@ -89,7 +90,7 @@ transition: all 200ms;}
 
 .label{ 
     font-family: sans-serif; }
-
+/*
 .pomo { 
     background-color: blue;
     width: 100px;
@@ -115,3 +116,29 @@ transform: translateX(30px);}
 .chill {
     color: seagreen;
 }
+
+.pomo-bg {
+    width: 100px;
+height: 100px;
+    position: relative;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    display: none;
+
+
+}
+.pomo-bg  > div {
+width: 100px;
+height: 100px;
+background-color: brown;
+position: absolute; }
+
+div.bg2 { 
+    background-color:  brown;
+    transform-origin: bottom right;
+    transform: rotate(60deg);
+ }
+
+ .show { 
+    display: block;
+ }
